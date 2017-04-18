@@ -1,0 +1,53 @@
+{
+"locations": [
+{"name": "Cochlear", "id": 1},
+{"name": "Dorsal Cochlear Nucleus", "id": 2},
+{"name": "Anteroventral Cochlear Nucleus", "id": 3},
+{"name": "Posteroventral Cochlear Nucleus", "id": 4}
+],
+"cells": [
+{"id": "Inner Hair Cell", "location": 1},
+{"id": "Outer Hair Cell", "location": 1},
+{"id": "Type I SGN", "location": 1},
+{"id": "Type II SGN", "location": 1},
+{"id": "Pyramidal", "location": 2},
+{"id": "Stellate", "location": 2},
+{"id": "Cartwheel", "location": 2},
+{"id": "Unipolar Brush", "location": 2},
+{"id": "Golgi", "location": 2},
+{"id": "Granule", "location": 2},
+{"id": "Giant", "location": 2},
+{"id": "Tuberculoventral", "location": 2},
+{"id": "Spherical", "location": 3},
+{"id": "Globular", "location": 3},
+{"id": "T-Stellate", "location": 3},
+{"id": "D-Stellate", "location": 3},
+{"id": "Planar","location": 4},
+{"id": "Octopus","location": 4},
+{"id": "Radiate","location": 4}
+],
+"links": [
+{"source": "Inner Hair Cell", "target": "Type I SGN", "type": "E"},
+{"source": "Outer Hair Cell", "target": "Type II SGN", "type": "E"},
+{"source": "Type I SGN", "target": "Pyramidal", "type": "E"},
+{"source": "Type I SGN", "target": "Tuberculoventral", "type": "E"},
+{"source": "Pyramidal", "target": "Stellate", "type": "E"},
+{"source": "Granule", "target": "Cartwheel", "type": "E"},
+{"source": "Stellate", "target": "Cartwheel", "type": "I"},
+{"source": "Cartwheel", "target": "Cartwheel", "type": "I"},
+{"source": "Granule", "target": "Unipolar Brush", "type": "E"},
+{"source": "Unipolar Brush", "target": "Granule", "type": "E"},
+{"source": "Cartwheel", "target": "Giant", "type": "I"},
+{"source": "Type I SGN", "target": "Spherical", "type": "E"},
+{"source": "Type I SGN", "target": "Globular", "type": "E"},
+{"source": "Type I SGN", "target": "T-Stellate", "type": "E"},
+{"source": "D-Stellate", "target": "T-Stellate", "type": "I"},
+{"source": "Type I SGN", "target": "Planar", "type": "E"},
+{"source": "Type I SGN", "target": "Radiate", "type": "E"},
+{"source": "Type I SGN", "target": "Octopus", "type": "E"},
+{"source": "T-Stellate", "target": "Pyramidal", "type": "I"},
+{"source": "Cartwheel", "target": "Pyramidal", "type": "I"},
+{"source": "Tuberculoventral", "target": "Pyramidal", "type": "I"},
+{"source": "Tuberculoventral", "target": "T-Stellate", "type": "I"}
+]
+}
