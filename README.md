@@ -8,3 +8,9 @@ A working prototype can be found here https://bl.ocks.org/OMHouston/ada82602ae73
 I am open to any alternative methods of doing things, for me the priority is simplicity and speed for the end-user.
 
 Also, if you have any questions, please ask, I am not a developer, so have probably missed some things out.
+
+The Data is currently organised into 3 tables: Locations, Cells and Links.
+
+locations includes areas of the brain/body, e.g. the cochlea/retina, or nuclei within the brain (lateral geniculate nucleus).
+Cells includes the cell types and the location they are found, e.g. sensory hair cells are found in the cochlea, photoreceptors in the retina. (location is a foreign key reference).
+Links contains the source and target of a connection (both foreign keys to the cells table).
